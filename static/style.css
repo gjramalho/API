@@ -1,0 +1,233 @@
+:root {
+    --primary: #2564eb;
+    --primary-light: #e5f0ff;
+    --secondary: #605e5c;
+    --success: #107c10;
+    --danger: #a80000;
+    --light: #f8f9fa;
+    --dark: #323130;
+    --bg-color: #ffffff;
+    --text-color: #323130;
+    --card-bg: white;
+    --border-color: #edebe9;
+    --hover-bg: #f3f2f1;
+}
+
+[data-theme="dark"] {
+    --primary: #4f6bed;
+    --primary-light: #1a2b5e;
+    --secondary: #a19f9d;
+    --bg-color: #1b1a19;
+    --text-color: #f3f2f1;
+    --card-bg: #252423;
+    --border-color: #3b3a39;
+    --hover-bg: #2d2c2c;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.task-list-container {
+    margin-top: 20px;
+}
+
+h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+#task-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.add-btn {
+    background-color: var(--primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task:hover {
+    background-color: var(--hover-bg);
+}
+
+.task-content {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.task-title {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.task.completed .task-title {
+    color: var(--secondary);
+    text-decoration: line-through;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.status-toggle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.task.completed .status-toggle {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--danger);
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.task:hover .delete-btn,
+.task:hover .edit-btn {
+    opacity: 1;
+}
+
+.section-header {
+    color: var(--primary);
+    margin: 20px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.task-date {
+    color: var(--secondary);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.task-title-edit {
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.edit-btn, .save-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-right: 5px;
+}
+
+.save-btn {
+    color: var(--success);
+}
+
+.stats-container {
+    margin-top: 30px;
+    padding: 15px;
+    background: var(--card-bg);
+    border-radius: 4px;
+}
+
+.stats-container h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.stats-container div {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
