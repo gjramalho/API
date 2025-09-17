@@ -2,6 +2,9 @@
 
 Um aplicativo completo de gerenciamento de tarefas com backend REST API e interface web moderna.
 
+![Exemplo da Interface](static/exemplo-interface.png)
+*Exemplo visual da interface web*
+
 ## Funcionalidades
 
 - **Gerenciamento de Tarefas**:
@@ -27,6 +30,10 @@ Um aplicativo completo de gerenciamento de tarefas com backend REST API e interf
 - Flask 2.3.2
 - Flask-SQLAlchemy 3.0.3
 - SQLite
+
+Links úteis:
+- [Documentação Flask](https://flask.palletsprojects.com/)
+- [Documentação SQLAlchemy](https://docs.sqlalchemy.org/)
 
 ### Frontend
 - HTML5
@@ -140,3 +147,11 @@ FLASK_ENV=development python app.py
 
 ## Licença
 Licença MIT - veja o arquivo [LICENSE](#) para detalhes
+
+## Contato e Suporte
+
+Para dúvidas, sugestões ou reportar problemas, abra uma issue no GitHub ou envie e-mail para: [seu-email@dominio.com]
+
+## Status do Projeto
+
+🚧 Em desenvolvimento. Novas funcionalidades e melhorias estão sendo implementadas.
