@@ -145,13 +145,6 @@ FLASK_ENV=development python app.py
 - JavaScript utiliza recursos ES6 e Fetch API
 - Preferência de modo escuro é armazenada no localStorage
 
-## Licença
-Licença MIT - veja o arquivo [LICENSE](#) para detalhes
-
-## Contato e Suporte
-
-Para dúvidas, sugestões ou reportar problemas, abra uma issue no GitHub ou envie e-mail para: [seu-email@dominio.com]
-
 ## Status do Projeto
 
 🚧 Em desenvolvimento. Novas funcionalidades e melhorias estão sendo implementadas.
