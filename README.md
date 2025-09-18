@@ -2,8 +2,6 @@
 
 Um aplicativo completo de gerenciamento de tarefas com backend REST API e interface web moderna.
 
-![Exemplo da Interface](static/exemplo-interface.png)
-*Exemplo visual da interface web*
 
 ## Funcionalidades
 
